@@ -13,8 +13,8 @@
 // AND short-circuit
 let a = true; //set to true
 let b = false; //set to false
-let c = a && console.log("This will NOT print"); // returns false
-let d = b && console.log("This will print"); // returns undefined
+let c = b && console.log("This will NOT print"); // returns false
+let d = a && console.log("This will print"); // returns undefined
 
 // OR short-circuit
 let f = true; //set to true
