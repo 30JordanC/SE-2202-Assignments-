@@ -5,7 +5,7 @@ and basic comparison.
 
 
 //remember that strings go in quotes
-let ageString = 17; //set age to "17"
+let ageString = "17"; //set age to "17"
 
 //lets try again as a number
 let age = 17; //set age to 17
