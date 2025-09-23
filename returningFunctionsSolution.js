@@ -23,19 +23,19 @@ let getDictionary = function (lang)
             2 -> two
             3 -> three
             use all small characters
-        */       
-       if (number === 1)
-       {
-        return "one";
-       }
-       else if (number === 2)
-       {
-        return "two";
-       }
-       else if (number === 3)
-       {
-        return "three";
-    }//end else if 
+        */     
+       switch (number)
+         {
+          case 1:
+            return "one";
+            break;
+          case 2:
+            return "two";
+            break;
+          case 3:
+            return "three";
+            break;  
+    }//end switch
     } //end english dictionary
     /*
         Complete the definiton of the englishDictionary function
@@ -50,18 +50,18 @@ let getDictionary = function (lang)
             3 -> trois
             use all small characters
         */      
-         if (number === 1)
-            {
-                return "un";
-            } 
-            else if (number === 2)
-            {
-                return "deux";
-            }
-            else if (number === 3)
-            {
-                return "trois";
-            }//end else if 
+       switch (number)
+         {
+          case 1:
+            return "un";
+            break;
+          case 2:
+            return "deux";
+            break;
+          case 3:
+            return "trois";
+            break;  
+    }//end switch 
     }//end french dictionary
     /*
         Write an if-statement that would return either the engishDictionary or the frenchDictionary 
