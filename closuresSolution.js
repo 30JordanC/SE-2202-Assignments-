@@ -10,23 +10,27 @@ let counter = function (increment) {
         Create and return an inner function that receives a value increment
         and increments the value stored in count by increment.
     */
-   function inner(increment)
+    return function()
    {
     count = count + increment;
     return count;
    }//end inner function
-   return inner(increment);
 }//end outter function 
 
+let countByTwo = counter(2);
+let countByOne = counter(1);
+/*
 let countByTwo = function ()// set this variable to a closure that produces a counter that adds two each time it's called
 {
-    return counter(2);
+    var count2 = count2 + counter(2);
+    return count2;
 }//end countByTwo
 let countByOne = function() // set this variable to a closure that produces a counter that adds 1 each time it's called
 {
-    return counter(1);
+    var ount1 = count1 + counter(1);
+    return count1;
 }//end countByOne
-
+*/
 // DO NOT change the lines below
 console.log(countByTwo());
 console.log(countByOne());
